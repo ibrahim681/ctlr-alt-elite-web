@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Link from 'next/link'
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <Layout>
       <div className={styles.container}>
         <Head>
-          <title>Create Next App</title>
+          <title>Hack-Awaya</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <img src="/logo.jpg" alt="ctrl-alt-elite" className={styles.teamLogo} />
