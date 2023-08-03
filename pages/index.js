@@ -11,25 +11,27 @@ export default function Home() {
           <title>Create Next App</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
+        <img src="/logo.jpg" alt="ctrl-alt-elite" className={styles.teamLogo} />
         <main>
           <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
+            Welcome to <a href="https://nextjs.org">Hack-Awaya</a>
           </h1>
 
+
           <p className={styles.description}>
-            Get started by editing <code>pages/index.js</code>
+            This hackathon project utilizes AWS Rekognition, AWS Lambda, and API Gateway to detect and identify humans, debris, and vehicles in a highway video.
+            The identified objects are reported back to the user for real-time insights and analysis.
           </p>
 
           <div className={styles.grid}>
             <Link href="/feed" className={styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
+              <h3>Get Started &rarr;</h3>
+              <p>Experiance the power of AI. </p>
             </Link>
 
             <Link href="/user" className={styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
+              <h3>Upload Image &rarr;</h3>
+              <p>Find image attributes.</p>
             </Link>
           </div>
         </main>
