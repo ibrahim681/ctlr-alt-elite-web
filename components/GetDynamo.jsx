@@ -36,10 +36,11 @@ const GetDynamo = () => {
       {newestItem ? (
         <div>
           <h2>Newest Item</h2>
-          <p>ID: {newestItem.image_source}</p>
-          <p>ID: {newestItem.upload_name}</p>
-          <p>ID: {newestItem.timestamp}</p>
-          <p>ID: {newestItem.results}</p>
+          {newestItem.image_source && (
+            <img src={newestItem.image_source} alt="Newest Item Image" />
+          )}
+          <p>{newestItem.timestamp}</p>
+          <p>Results: {newestItem.results}</p>
         </div>
       ) : (
         <p>Loading...</p>
