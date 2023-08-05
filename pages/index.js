@@ -24,12 +24,12 @@ export default function Home() {
           </p>
 
           <div className={styles.grid}>
-            <Link href="/feed" className={styles.card}>
+            <Link href="/user" className={styles.card}>
               <h3>Get Started &rarr;</h3>
               <p>Experiance the power of AI. </p>
             </Link>
 
-            <Link href="/user" className={styles.card}>
+            <Link href="/feed" className={styles.card}>
               <h3>Upload Image &rarr;</h3>
               <p>Find image attributes.</p>
             </Link>
