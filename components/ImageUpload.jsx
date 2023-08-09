@@ -44,7 +44,7 @@ const ImageUploadForm = () => {
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
-                    'content- type': 'image/jpeg',
+                    'content-type': 'image/jpeg',
                     'content-length': `${selectedFile.size}`, // 👈 Headers need to be a string
                 },
                 // body: JSON.stringify(imageBase64),
