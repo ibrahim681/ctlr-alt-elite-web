@@ -36,9 +36,9 @@ const ImageUploadForm = () => {
 
     // Function to send the POST request with the base64 image
     const sendPostRequestWithImage = async (imageBase64) => {
-        // const url = 'https://4ml4bdby25.execute-api.us-east-2.amazonaws.com/process-image'; // Replace this with your API endpoint
+        const url = 'https://4ml4bdby25.execute-api.us-east-2.amazonaws.com/process-image'; // Replace this with your API endpoint
         // const url = 'https://httpbin.org/post';
-        const url = 'https://rwb5f7oy9k.execute-api.us-east-2.amazonaws.com/prod/'
+        // const url = 'https://rwb5f7oy9k.execute-api.us-east-2.amazonaws.com/prod/'
         console.log(selectedFile)
         try {
             const response = await fetch(url, {
