@@ -36,15 +36,20 @@ const ImageUploadForm = () => {
 
     // Function to send the POST request with the base64 image
     const sendPostRequestWithImage = async (imageBase64) => {
-        const url = 'https://example.com/upload'; // Replace this with your API endpoint
-
+        // const url = 'https://4ml4bdby25.execute-api.us-east-2.amazonaws.com/process-image'; // Replace this with your API endpoint
+        // const url = 'https://httpbin.org/post';
+        const url = 'https://rwb5f7oy9k.execute-api.us-east-2.amazonaws.com/prod/'
+        console.log(selectedFile)
         try {
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'content- type': 'image/jpeg',
+                    'content-length': `${selectedFile.size}`, // 👈 Headers need to be a string
                 },
-                body: JSON.stringify({ image: imageBase64 }),
+                // body: JSON.stringify(imageBase64),
+                body: imageBase64,
+                // body: imageBase64.split(",")[1]
             });
 
             if (response.ok) {
