@@ -44,6 +44,7 @@ const ImageUploadForm = () => {
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
+                    'Access-Control-Allow-Origin': '*',
                     'content-type': 'image/jpeg',
                     'content-length': `${selectedFile.size}`, // 👈 Headers need to be a string
                 },
