@@ -26,7 +26,7 @@ export default function Home() {
           <div className={styles.grid}>
             <Link href="/user" className={styles.card}>
               <h3>Get Started &rarr;</h3>
-              <p>Experiance the power of AI. </p>
+              <p>Experience the power of AI. </p>
             </Link>
 
             <Link href="/feed" className={styles.card}>
